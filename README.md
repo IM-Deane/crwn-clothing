@@ -2,7 +2,7 @@
 
 TODO: Link to live version TODO: Project Image
 
-**Current Version:** 0.0.2
+**Current Version:** 0.0.3
 
 ## Description:
 
@@ -33,6 +33,10 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.3:**
+
+Added additional styling to menu items
 
 **Version 0.0.2:**
 
