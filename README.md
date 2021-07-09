@@ -1,8 +1,11 @@
 # Project: Crwn-Clothing
 
-TODO: Link to live version TODO: Project Image
+TODO:
 
-**Current Version:** 0.0.3
+- Link to live version
+- Project Image
+
+**Current Version:** 0.0.4
 
 ## Description:
 
@@ -33,6 +36,16 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.4:**
+
+Implemented basic routing using react-router-dom.
+
+Since we're not using hooks yet, i've learned how to utilzie the withRouter()
+component.
+
+This HOC allows us to access the history, location, and match props without
+using prop drilling.
 
 **Version 0.0.3:**
 
