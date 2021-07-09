@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.5
+**Current Version:** 0.0.6
 
 ## Description:
 
@@ -36,6 +36,10 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.6:**
+
+Implemented header component to the site. The app now has true routing.
 
 **Version 0.0.5:**
 
