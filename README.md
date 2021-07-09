@@ -37,6 +37,11 @@ is to build a large-scale react app with class-based components.
 
 ## Version History:
 
+**Version 0.0.12:**
+
+Added a redirect feature that is triggered when users who're signed in land on
+the "/signin" route.
+
 **Version 0.0.11:**
 
 Added Redux config and implemented user reducer and user actions to header and
