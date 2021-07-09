@@ -6,7 +6,7 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
 	<div className="group">
 		<input className="form-input" onChange={handleChange} {...otherProps} />
 		{label ? (
-			// Add shrink property once user types anything
+			// Add shrink property for floating label effect
 			<label
 				className={`${
 					otherProps.value.length ? "shrink" : ""

@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.7
+**Current Version:** 0.0.8
 
 ## Description:
 
@@ -36,6 +36,13 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.8:**
+
+Implemented Google Firebase Authentication. This allows the user to sign in and
+out using their Google Account.
+
+Also added sign in and out button to the header of the site.
 
 **Version 0.0.7:**
 
