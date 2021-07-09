@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.10
+**Current Version:** 0.0.11
 
 ## Description:
 
@@ -36,6 +36,11 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.11:**
+
+Added Redux config and implemented user reducer and user actions to header and
+app components.
 
 **Version 0.0.10:**
 
