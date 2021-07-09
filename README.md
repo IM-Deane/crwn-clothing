@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.4
+**Current Version:** 0.0.5
 
 ## Description:
 
@@ -36,6 +36,19 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.5:**
+
+Added a shop page that a user can navigate to.
+
+Once they land on this page, the user is presented with various collections that
+the store has for sale.
+
+To implement this, besides the main shop page, we added a collection preview
+component which displayed the first four items in the collection.
+
+We also added an individual collection item component which holds the styling
+and data for each product.
 
 **Version 0.0.4:**
 
