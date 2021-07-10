@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.14
+**Current Version:** 0.0.15
 
 ## Description:
 
@@ -31,11 +31,20 @@ is to build a large-scale react app with class-based components.
 ### Stack:
 
 - React
+- Redux
 - SASS
 - Firebase
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.15:**
+
+Implemented cart item components & reducer. These will render the selected items
+inside the cart dropdown menu.
+
+The items picture will be displayed as well as the current quanity as well as
+the price of each item.
 
 **Version 0.0.14:**
 
