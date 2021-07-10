@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.11
+**Current Version:** 0.0.13
 
 ## Description:
 
@@ -36,6 +36,19 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.13:**
+
+Added cart icon and cart dropdown components.
+
+The cart icon is located in the header of the site.
+
+The dropdown is trigger once a user clicks on the cart icon.
+
+The clicking of the cart icon is an action which is dispatched to a cart
+reducer.
+
+The reducer enables us to control the display state of the dropdown menu.
 
 **Version 0.0.12:**
 
