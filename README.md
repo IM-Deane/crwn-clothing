@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.1.0
+**Current Version:** 0.1.1
 
 ## Description:
 
@@ -37,6 +37,17 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.1.1:**
+
+Pushed current version of site to heroku. It can be found
+[here](https://crwn-clothing-im-deane.herokuapp.com/).
+
+This version of the site is fully functional and demonstrates that I have a
+fundamental understanding of React.js.
+
+After some optimization, the next versions of the site will utilize more
+advanced concepts.
 
 **Version 0.1.0:**
 
