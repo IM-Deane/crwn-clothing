@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.16
+**Current Version:** 0.0.17
 
 ## Description:
 
@@ -37,6 +37,11 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.17:**
+
+Added checkout page, checkout item component, and updated cart to use selectors
+from reselect.
 
 **Version 0.0.16:**
 
