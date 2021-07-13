@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.19
+**Current Version:** 0.0.20
 
 ## Description:
 
@@ -37,6 +37,13 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.20:**
+
+Moved directory and shop data into its own reducer.
+
+Then created the respective selectors and updated corresponding components with
+new redux flow for directory shop.
 
 **Version 0.0.19:**
 
