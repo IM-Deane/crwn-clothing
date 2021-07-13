@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.20
+**Current Version:** 0.1.00
 
 ## Description:
 
@@ -37,6 +37,16 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.1.00:**
+
+Implemented stripe payments to our checkout page. When the user decides to
+checkout, the page utilizes the stripe api to proceed with a mock payment.
+
+A test credit card is provided at the bottom of the page.
+
+Added a custom favicon and title to index.html. The app now looks and feels like
+a true online store.
 
 **Version 0.0.20:**
 
