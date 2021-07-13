@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.0.18
+**Current Version:** 0.0.19
 
 ## Description:
 
@@ -37,6 +37,15 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.0.19:**
+
+Implemented the redux-persist library. This package utilizes the browsers
+local/session storage to persist aspects of the redux store.
+
+Using this package, we've now saved the cart items to the browsers memory. This
+enables us to store the selected items between browser refreshes and even if the
+user closes the browser window.
 
 **Version 0.0.18:**
 
