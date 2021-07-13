@@ -1,4 +1,4 @@
-# Project: Crwn Clothing
+# Project: CRWN Clothing
 
 TODO:
 
