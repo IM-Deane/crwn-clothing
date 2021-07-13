@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.1.00
+**Current Version:** 0.1.0
 
 ## Description:
 
@@ -38,7 +38,7 @@ is to build a large-scale react app with class-based components.
 
 ## Version History:
 
-**Version 0.1.00:**
+**Version 0.1.0:**
 
 Implemented stripe payments to our checkout page. When the user decides to
 checkout, the page utilizes the stripe api to proceed with a mock payment.
