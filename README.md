@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.1.1
+**Current Version:** 0.1.2
 
 ## Description:
 
@@ -32,11 +32,17 @@ is to build a large-scale react app with class-based components.
 
 - React
 - Redux
+- Styled-Components
 - SASS
 - Firebase
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.1.2:**
+
+Learned about styled-components and began refactoring previous style sheets to
+this new methodology.
 
 **Version 0.1.1:**
 
