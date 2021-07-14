@@ -43,6 +43,53 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
 firebase.initializeApp(config);
 
+// This function was created to avoid manually adding
+// the shop data to the firestore
+// However, now that this is complete, we still have
+// a function that can add new collections whenever
+// we choose
+export const addCollectionAndDocuments = async (
+	collectionKey,
+	objectsToAdd
+) => {
+	const collectionRef = firestore.collection(collectionKey);
+
+	// Batch == transaction statement.
+	// If any of the calls in the batch fail, the method will throw an error
+	// This ensures that either all of the operations succeed or they all fail
+	const batch = firestore.batch();
+	objectsToAdd.forEach((obj) => {
+		// Generate new ref obj with unique id
+		const newDocRef = collectionRef.doc();
+		batch.set(newDocRef, obj);
+	});
+
+	// Returns promise
+	return await batch.commit();
+};
+
+export const convertCollectionsSnapshotToMap = (collections) => {
+	const transformedCollection = collections.docs.map((doc) => {
+		// Get collection props from fetched data
+		const { title, items } = doc.data();
+
+		return {
+			routeName: encodeURI(title.toLowerCase()), //convert to useable url
+			id: doc.id,
+			title,
+			items,
+		};
+	});
+	// Convert the fetched data into a mapped collection
+	return transformedCollection.reduce((accumulator, collection) => {
+		// title = key; collection object = value
+		// To access the collection we'll call the key
+		// "hats" = hats collection
+		accumulator[collection.title.toLowerCase()] = collection;
+		return accumulator;
+	}, {});
+};
+
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 

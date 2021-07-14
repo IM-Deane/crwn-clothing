@@ -5,7 +5,7 @@ TODO:
 - Link to live version
 - Project Image
 
-**Current Version:** 0.1.2
+**Current Version:** 0.1.3
 
 ## Description:
 
@@ -38,6 +38,13 @@ is to build a large-scale react app with class-based components.
 - Stripe API (for payments)
 
 ## Version History:
+
+**Version 0.1.3:** Refactored the shop.data.js into a collection on Firebase.
+This allows us (or another team member) to easily update the store's products
+from the Firestore.
+
+Also implemented a loading state spinner that is utilized while the application
+is fetching data from the database.
 
 **Version 0.1.2:**
 
