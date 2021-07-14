@@ -1,4 +1,4 @@
-# Project: CRWN Clothing
+# CRWN Clothing
 
 TODO:
 
@@ -17,15 +17,15 @@ Although this app was created while following a
 [Udemy tutorial](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/),
 I still plan to document what we are learning.
 
-**Outcome:**
+### Outcome:
 
-### Beginner Version:
+**Beginner Version:**
 
 Although I've created larger React projects before, I have not done so using
 class-based components.
 
 To really learn React, I believe it is crucial to understand this aspect even
-though i'll likely use hooks.
+though i'll likely use React hooks in the future.
 
 ~~Therefore, besides brushing up on core concepts, the main goal of this project
 is to build a large-scale react app with class-based components.~~
@@ -52,7 +52,7 @@ During this process, i've been exposed to concepts such as:
 - Firebase
 - Stripe API (for payments)
 
-### Advanced Version:
+**Advanced Version:**
 
 After deploying the current version to Heroku, I'm now undertaking the advanced
 version of the course.
@@ -60,11 +60,10 @@ version of the course.
 **In this next stage, I'll be learning about:**
 
 - CSS in JS using the styled-components library
-- Advanced Redux & Firebase (adding the store's products to Firebase)
+- Firebase (adding the store's products to Firebase)
 - HOC Patterns
-- Async Redux
+- Adv. Redux incl. Async Redux & Redux-Saga
 - The Container Pattern
-- Redux-Saga
 - React Hooks
 - React Context API
 - GraphQL & Apollo
