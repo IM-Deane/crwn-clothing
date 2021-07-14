@@ -19,11 +19,19 @@ Although this app was created while following a
 [Udemy tutorial](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/),
 I still plan to document what we are learning.
 
+**Stack:**
+
+- React (Class-based components)
+- Redux
+- SASS
+- Firebase
+- Stripe API (for payments)
+
 ### Outcome:
 
 **Beginner Version:**
 
-Although I've created larger React projects before, I have not done so using
+Although I've created larger React projects before, I haven't done so using
 class-based components.
 
 To really learn React, I believe it is crucial to understand this aspect even
@@ -32,8 +40,8 @@ though i'll likely use React hooks in the future.
 ~~Therefore, besides brushing up on core concepts, the main goal of this project
 is to build a large-scale react app with class-based components.~~
 
-After deploying the application to Heroku, i've completed to beginner version of
-the course.
+After successfully deploying the site to Heroku, i've completed the beginner
+version of the course.
 
 At this point, I've learned how to create a fully functional E-commerce store.
 
@@ -46,18 +54,22 @@ During this process, i've been exposed to concepts such as:
 - Firebase for authentication
 - Stripe API for processing credit card payments.
 
-**Beginner Stack:**
-
-- React (Class-base components)
-- Redux
-- SASS
-- Firebase
-- Stripe API (for payments)
+This half of the course was a great way to solidify my understanding of React.
+However, I plan to continue on with the second half of the course which teaches
+more advanced concepts.
 
 **Advanced Version:**
 
 After deploying the current version to Heroku, I'm now undertaking the advanced
 version of the course.
+
+**Stack:**
+
+- React (with Hooks)
+- Redux, Async Redux & Redux-Saga
+- Styled-Components
+- Firebase
+- Stripe API (for payments)
 
 **In this next stage, I'll be learning about:**
 
@@ -70,14 +82,6 @@ version of the course.
 - React Context API
 - GraphQL & Apollo
 - React performance upgrades (Code Splitting, React Lazy, etc)
-
-**Adv. Stack:**
-
-- React (with Hooks)
-- Redux, Async Redux & Redux-Saga
-- Styled-Components
-- Firebase
-- Stripe API (for payments)
 
 ## Version History:
 
