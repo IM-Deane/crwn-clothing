@@ -31,7 +31,8 @@ class ShopPage extends React.Component {
 		const { updateCollections } = this.props;
 		const collectionRef = firestore.collection("collections");
 
-		collectionRef.onSnapshot(async (snapshot) => {
+		// Promise-based fetch pattern
+		collectionRef.get().then((snapshot) => {
 			// Returns an array of objects as a map
 			const collectionsMap = convertCollectionsSnapshotToMap(snapshot);
 			// Add collections to redux

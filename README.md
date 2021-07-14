@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.3
+**Current Version:** 0.1.4
 
 ## Description:
 
@@ -85,9 +85,29 @@ version of the course.
 
 ## Version History:
 
-**Version 0.1.3:** Refactored the shop.data.js into a collection on Firebase.
-This allows us (or another team member) to easily update the store's products
-from the Firestore.
+**Version 0.1.4:**
+
+Refactored the shop.component to utilize the promise-based data fetching
+pattern.
+
+Previously, we were using the observer/observable pattern. Although both of
+these methods work, the course wanted to highlight that there are other ways to
+get data from Firebase.
+
+An interesting difference between these two patterns is that the observer
+pattern will update our shop page whenever new items are added to the database.
+This is because the observer is always watching for new events during the
+lifecycle of the component.
+
+In contrast, the promise pattern will only update the data when the component
+re-renders.
+
+This tradeoff is something to keep in mind for future applications.
+
+**Version 0.1.3:**
+
+Refactored the shop.data.js into a collection on Firebase. This allows us (or
+another team member) to easily update the store's products from the Firestore.
 
 Also implemented a loading state spinner that is utilized while the application
 is fetching data from the database.
