@@ -2,8 +2,10 @@
 
 TODO:
 
-- Link to live version
 - Project Image
+
+Live Demo:
+[https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
 **Current Version:** 0.1.3
 
