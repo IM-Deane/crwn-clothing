@@ -1,27 +1,21 @@
-import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
-// Styles
 import "./App.css";
 
-// Pages
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
+import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 
-// Firebase
 import Header from "./components/header/header.component";
-import SignInAndSignUp from "./pages/sign-in-sign-up/sign-in-sign-up.component";
 
-// Redux
 import { selectCurrentUser } from "./redux/user/user.selectors";
 import { checkUserSession } from "./redux/user/user.actions";
 
-class App extends Component {
-	// **** SUBSCRIPTION to user authentication state changes ****
-
+class App extends React.Component {
 	unsubscribeFromAuth = null;
 
 	componentDidMount() {
@@ -30,11 +24,8 @@ class App extends Component {
 	}
 
 	componentWillUnmount() {
-		// End subscription after component unmounted
 		this.unsubscribeFromAuth();
 	}
-
-	// **** End of SUBSCRIPTION ****
 
 	render() {
 		return (
@@ -48,7 +39,11 @@ class App extends Component {
 						exact
 						path="/signin"
 						render={() =>
-							this.props.currentUser ? <Redirect to="/" /> : <SignInAndSignUp />
+							this.props.currentUser ? (
+								<Redirect to="/" />
+							) : (
+								<SignInAndSignUpPage />
+							)
 						}
 					/>
 				</Switch>

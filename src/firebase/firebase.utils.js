@@ -11,6 +11,8 @@ const config = {
 	appId: "1:413794881529:web:c28cb147a2da6ce068b728",
 };
 
+firebase.initializeApp(config);
+
 // Add User to database
 export const createUserProfileDocument = async (userAuth, additionalData) => {
 	// Handle logged out users
@@ -40,8 +42,6 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 
 	return userRef;
 };
-
-firebase.initializeApp(config);
 
 // This function was created to avoid manually adding
 // the shop data to the firestore
@@ -94,9 +94,8 @@ export const getCurrentUser = () => {
 	return new Promise((resolve, reject) => {
 		const unsubscribe = auth.onAuthStateChanged((userAuth) => {
 			unsubscribe();
-			// Promise success
 			resolve(userAuth);
-		}, reject); // promise error
+		}, reject);
 	});
 };
 

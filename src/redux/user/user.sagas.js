@@ -53,7 +53,7 @@ export function* signInWithEmail({ payload: { email, password } }) {
 export function* isUserAuthenticated() {
 	try {
 		const userAuth = yield getCurrentUser();
-		if (!userAuth) return;
+		if (!userAuth) return console.log("Not authenticated");
 		yield getSnapshotFromUserAuth(userAuth);
 	} catch (error) {
 		yield put(signInFailure(error));

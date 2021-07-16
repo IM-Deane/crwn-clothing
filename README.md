@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.5
+**Current Version:** 0.1.6
 
 ## Description:
 
@@ -85,6 +85,28 @@ version of the course.
 
 ## Version History:
 
+**Version 0.1.6:**
+
+Fixed the bug that was impact the sign out process.
+
+It turns out there were two typos that were impact the app.
+
+The first one I identified was in the root-reducer file. Here, I had misspelled
+the whitelist property as "whiteList".
+
+This bug told the app to persist the entire store in local storage. Which meant
+that the user state was always being drawn from there.
+
+The second bug was found in the user.types file. Here, I had added an extra C in
+SIGN_OUT_SUCCESS.
+
+Because I simply copied this into the action file as well, it would appear that
+the sign out was successful even though it wasn't.
+
+This was tricky bug that was very frustrating to solve.
+
+If it wasn't for redux-logger, I may not have found the issue.
+
 **Version 0.1.5:**
 
 Refactored the application to utilize the Redux-saga library.
@@ -106,10 +128,10 @@ app header.
 When a user sign's in with an existing account, or sign's up with a new one, the
 app works as expected.
 
-However, when the user tries to sign out nothing seems to happen.
+However, when the user tries to sign out, nothing seems to happen.
 
 After consulting redux-logger, it appears that the signout action is firing
-normally. However, the user state is not being clear if the action is
+normally. However, the user state is not being cleared if the action is
 successful.
 
 I will begin debugging the app tomorrow when I have more time.

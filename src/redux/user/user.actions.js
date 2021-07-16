@@ -32,7 +32,7 @@ export const signOutStart = () => ({
 });
 
 export const signOutSuccess = () => ({
-	type: UserActionTypes.SIGN_OUT_SUCCCESS,
+	type: UserActionTypes.SIGN_OUT_SUCCESS,
 });
 export const signOutFailure = (error) => ({
 	type: UserActionTypes.SIGN_OUT_FAILURE,
