@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.4
+**Current Version:** 0.1.5
 
 ## Description:
 
@@ -84,6 +84,35 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.5:**
+
+Refactored the application to utilize the Redux-saga library.
+
+This was a pretty advanced section of the course that I will definitely need to
+revist in the future. It was however, an interesting pattern to learn.
+
+I think it is a pretty powerful library when you need exact control over your
+state side effects.
+
+Learning about the ES6 generator functions that redux-sagas are built upon was
+also helpful.
+
+**Note:**
+
+I'm currently trying to trackdown a bug with the sign-in/sign-out button in the
+app header.
+
+When a user sign's in with an existing account, or sign's up with a new one, the
+app works as expected.
+
+However, when the user tries to sign out nothing seems to happen.
+
+After consulting redux-logger, it appears that the signout action is firing
+normally. However, the user state is not being clear if the action is
+successful.
+
+I will begin debugging the app tomorrow when I have more time.
 
 **Version 0.1.4:**
 
