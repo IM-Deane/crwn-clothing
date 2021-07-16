@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.6
+**Current Version:** 0.1.7
 
 ## Description:
 
@@ -84,6 +84,17 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.7:**
+
+Refactored the app to utilize the useState and useEffect hooks in several
+components.
+
+The use of React hooks enabled us to convert the components from class-based to
+functional ones.
+
+This is because Hooks allow developers to write functional components which have
+access to state and lifecycle methods.
 
 **Version 0.1.6:**
 
