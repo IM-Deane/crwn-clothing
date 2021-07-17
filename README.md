@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.7
+**Current Version:** 0.1.8
 
 ## Description:
 
@@ -84,6 +84,12 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.8:**
+
+Implemented a backend server using Express.js.
+
+The server was needed to handle the stripe payment requests from the client.
 
 **Version 0.1.7:**
 
