@@ -91,6 +91,9 @@ Implemented a backend server using Express.js.
 
 The server was needed to handle the stripe payment requests from the client.
 
+To keep the frontend and backend files separate, the client files were moved to
+their own directory.
+
 **Version 0.1.7:**
 
 Refactored the app to utilize the useState and useEffect hooks in several
