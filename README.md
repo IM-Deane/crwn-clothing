@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.8
+**Current Version:** 0.1.10
 
 ## Description:
 
@@ -84,6 +84,19 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.10:**
+
+Converted several more component stylesheets into styled components.
+
+**Version 0.1.9:**
+
+Refactored several component style sheets into styled-components.
+
+Also added media queries to make the site more responsive on smaller devices.
+
+That being said, I would say this application still looks its best on devices
+with widths of 800px and up.
 
 **Version 0.1.8:**
 
