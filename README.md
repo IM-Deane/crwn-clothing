@@ -2,7 +2,7 @@
 
 ![CRWN Clothing Profile](https://github.com/IM-Deane/images/blob/main/assets/images/crwn-clothing-readme-img.jpg)
 
-Live Demo:
+Live demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
 **Current Version:** 0.1.11
@@ -17,6 +17,10 @@ Although this app was created while following a
 [Udemy tutorial](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/),
 I still plan to document what we are learning.
 
+### Outcome:
+
+**Beginner Version:**
+
 **Stack:**
 
 - React (Class-based components)
@@ -24,10 +28,6 @@ I still plan to document what we are learning.
 - SASS
 - Firebase
 - Stripe API (for payments)
-
-### Outcome:
-
-**Beginner Version:**
 
 Although I've created larger React projects before, I haven't done so using
 class-based components.
