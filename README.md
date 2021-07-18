@@ -5,7 +5,7 @@
 Live demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.12
+**Current Version:** 0.1.13
 
 ## Description:
 
@@ -82,6 +82,18 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.13:**
+
+Fixed bug where the cart was not clearing when the user signs out.
+
+The issue stemmed from the wrong callback function being supplied to the main
+cartSaga.
+
+There was also a small typo in the action type string that was causing the bug
+to go unnoticed.
+
+The feature now works as expected.
 
 **Version 0.1.12:**
 
