@@ -16,6 +16,11 @@ const CollectionPageContainer = lazy(() =>
 );
 
 const ShopPage = ({ fetchCollectionsStart, match }) => {
+	// Update page title
+	useEffect(() => {
+		document.title = "Shop | CRWN Clothing";
+	}, []);
+
 	useEffect(() => {
 		// Get collection data on component load
 		fetchCollectionsStart();

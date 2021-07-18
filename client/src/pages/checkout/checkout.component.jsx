@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
@@ -27,31 +27,37 @@ const headers = [
 	{ title: "Remove" },
 ];
 
-const CheckoutPage = ({ cartItems, total }) => (
-	<CheckoutPageContainer>
-		<CheckoutHeader>
-			{headers.map(({ title }) => (
-				<HeaderBlock>
-					<span>{title}</span>
-				</HeaderBlock>
-			))}
-		</CheckoutHeader>
-		{/* Display items in cart */}
-		{cartItems.map((cartItem) => (
-			<CheckoutItem key={cartItem.id} cartItem={cartItem} />
-		))}
+const CheckoutPage = ({ cartItems, total }) => {
+	useEffect(() => {
+		document.title = "Checkout | CRWN Clothing";
+	}, []);
 
-		<TotalContainer>
-			<span>Total: ${total}</span>
-		</TotalContainer>
-		<TestWarningContainer>
-			*Please use the following test credit card for payments*
-			<br />
-			4242 4242 4242 4242 - EXP: 07/24 - CVC: 123
-		</TestWarningContainer>
-		<StripeButton price={total} />
-	</CheckoutPageContainer>
-);
+	return (
+		<CheckoutPageContainer>
+			<CheckoutHeader>
+				{headers.map(({ title }, idx) => (
+					<HeaderBlock key={idx}>
+						<span>{title}</span>
+					</HeaderBlock>
+				))}
+			</CheckoutHeader>
+			{/* Display items in cart */}
+			{cartItems.map((cartItem) => (
+				<CheckoutItem key={cartItem.id} cartItem={cartItem} />
+			))}
+
+			<TotalContainer>
+				<span>Total: ${total}</span>
+			</TotalContainer>
+			<TestWarningContainer>
+				*Please use the following test credit card for payments*
+				<br />
+				4242 4242 4242 4242 - EXP: 07/24 - CVC: 123
+			</TestWarningContainer>
+			<StripeButton price={total} />
+		</CheckoutPageContainer>
+	);
+};
 
 const mapStateToProps = createStructuredSelector({
 	cartItems: selectCartItems,

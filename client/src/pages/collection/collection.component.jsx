@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
 import CollectionItem from "../../components/collection-item/collection-item.component";
@@ -11,7 +11,11 @@ import {
 	CollectionItems,
 } from "./collection.styles";
 
-const CollectionPage = ({ collection }) => {
+const CollectionPage = ({ collection, match }) => {
+	useEffect(() => {
+		document.title = `${match.params.collectionId.toUpperCase()} | CRWN Clothing`;
+	}, [match.params.collectionId]);
+
 	const { title, items } = collection;
 	return (
 		<CollectionPageContainer>

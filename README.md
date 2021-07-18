@@ -5,7 +5,7 @@
 Live demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.11
+**Current Version:** 0.1.12
 
 ## Description:
 
@@ -82,6 +82,10 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.12:**
+
+Added useEffect that modifies the document title based on the user's location.
 
 **Version 0.1.11:**
 
