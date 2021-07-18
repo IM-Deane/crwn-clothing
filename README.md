@@ -1,8 +1,6 @@
 # CRWN Clothing
 
-TODO:
-
-- Project Image
+![CRWN Clothing Profile](https://github.com/IM-Deane/images/blob/main/assets/images/crwn-clothing-readme-img.jpg)
 
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
