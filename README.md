@@ -7,7 +7,7 @@ TODO:
 Live Demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.10
+**Current Version:** 0.1.11
 
 ## Description:
 
@@ -84,6 +84,13 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.11:**
+
+Began optimizing the performance of the app by introducing React Lazy and
+Suspense.
+
+Also implemented Error boundaries to handle any unforseen errors.
 
 **Version 0.1.10:**
 
