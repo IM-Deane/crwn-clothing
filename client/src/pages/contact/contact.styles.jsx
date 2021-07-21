@@ -6,7 +6,7 @@ export const ContactContainer = styled.main`
 	height: 600px;
 
 	margin: 0 auto;
-	margin-top: 150px;
+	margin-top: 100px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -14,6 +14,7 @@ export const ContactContainer = styled.main`
 	@media screen and (max-width: 1200px) {
 		width: 600px;
 		height: 400px;
+		margin-top: 160px;
 	}
 
 	@media screen and (max-width: 800px) {
@@ -25,8 +26,17 @@ export const ContactContainer = styled.main`
 
 export const ContactForm = styled.form`
 	border: 2px solid black;
-	padding: 20px 30px;
+	border-radius: 4px;
+	width: 600px;
+
+	margin: 0 auto;
+	padding: 25px 45px;
 	text-align: center;
+
+	@media screen and (max-width: 620px) {
+		width: 80%;
+		padding: 0 30px;
+	}
 `;
 
 export const ContactFormHeader = styled.span`

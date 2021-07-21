@@ -5,7 +5,7 @@
 Live demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.15
+**Current Version:** 0.1.16
 
 ## Description:
 
@@ -82,6 +82,13 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.16:**
+
+Added text to the cart when no items are present. The text notifies the customer
+that they don't have items and provides them a link to the shop.
+
+Also hid the payment button and credit card info when no items are present.
 
 **Version 0.1.15:**
 

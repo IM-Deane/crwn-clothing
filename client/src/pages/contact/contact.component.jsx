@@ -62,7 +62,6 @@ const ContactPage = () => {
 					<ContactTitle>Have a question?</ContactTitle>
 				</ContactFormHeader>
 				<ContactSubtitle>Please fill out the following fields.</ContactSubtitle>
-
 				{/* Name */}
 				<FormInput
 					name="name"
@@ -82,7 +81,6 @@ const ContactPage = () => {
 					handleChange={handleFormChange}
 					required
 				/>
-
 				{/* Message */}
 				<FormInput
 					name="message"

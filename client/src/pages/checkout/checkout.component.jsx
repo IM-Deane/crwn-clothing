@@ -13,6 +13,9 @@ import CheckoutItem from "../../components/checkout-item/checkout-item.component
 import {
 	CheckoutPageContainer,
 	CheckoutHeader,
+	EmptyCartContainer,
+	CartEmptyHeader,
+	CollectionsLink,
 	HeaderBlock,
 	StripeButton,
 	TotalContainer,
@@ -42,19 +45,32 @@ const CheckoutPage = ({ cartItems, total }) => {
 				))}
 			</CheckoutHeader>
 			{/* Display items in cart */}
-			{cartItems.map((cartItem) => (
-				<CheckoutItem key={cartItem.id} cartItem={cartItem} />
-			))}
+			{cartItems.length > 0 ? (
+				cartItems.map((cartItem) => (
+					<CheckoutItem key={cartItem.id} cartItem={cartItem} />
+				))
+			) : (
+				<EmptyCartContainer>
+					<CartEmptyHeader>Your cart is currently empty.</CartEmptyHeader>
+					<CollectionsLink to="/shop">
+						View our latest collections.
+					</CollectionsLink>
+				</EmptyCartContainer>
+			)}
 
 			<TotalContainer>
 				<span>Total: ${total}</span>
 			</TotalContainer>
-			<TestWarningContainer>
-				*Please use the following test credit card for payments*
-				<br />
-				4242 4242 4242 4242 - EXP: 07/24 - CVC: 123
-			</TestWarningContainer>
-			<StripeButton price={total} />
+			{cartItems.length > 0 && (
+				<>
+					<TestWarningContainer>
+						*Please use the following test credit card for payments*
+						<br />
+						4242 4242 4242 4242 - EXP: 07/24 - CVC: 123
+					</TestWarningContainer>
+					<StripeButton price={total} />
+				</>
+			)}
 		</CheckoutPageContainer>
 	);
 };

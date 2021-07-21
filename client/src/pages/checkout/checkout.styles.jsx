@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
 
 export const CheckoutPageContainer = styled.div`
@@ -45,4 +47,32 @@ export const TestWarningContainer = styled.div`
 	margin-top: 40px;
 	font-size: 24px;
 	color: red;
+	margin-bottom: 20px;
+`;
+
+export const EmptyCartContainer = styled.div`
+	margin: 20px auto;
+`;
+
+export const CartEmptyHeader = styled.h1`
+	font-size: 22px;
+	font-weight: normal;
+
+	@media screen and (max-width: 600px) {
+		font-size: 16px;
+	}
+`;
+
+export const CollectionsLink = styled(Link)`
+	font-size: 20px;
+	color: #000;
+	text-decoration: underline;
+
+	&:hover {
+		cursor-pointer;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 16px;
+	}
 `;
