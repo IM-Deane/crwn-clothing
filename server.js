@@ -10,13 +10,14 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// gzip files on build
-app.use(compression());
 app.use(express.json());
+
 app.use(enforce.HTTPS({ trustProtoHeader: true }));
 app.use(express.urlencoded({ extended: true }));
 
 if (process.env.NODE_ENV === "production") {
+	// gzip files on build
+	app.use(compression());
 	// Allows us to serve static files during production
 	app.use(express.static(path.join(__dirname, "client/build")));
 
