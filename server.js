@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 
 if (process.env.NODE_ENV === "production") {
 	// gzip files on build
-	app.use(compression());
+	// app.use(compression());
 	// Allows us to serve static files during production
 	app.use(express.static(path.join(__dirname, "client/build")));
 
