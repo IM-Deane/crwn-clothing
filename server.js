@@ -45,3 +45,13 @@ app.post("/payment", (req, res) => {
 		}
 	});
 });
+
+// Handle contact form submissions
+app.post("/contact", (req, res) => {
+	const { email, name, password } = req.body;
+	try {
+		res.status(200).send({ formData: email, name, password });
+	} catch (error) {
+		res.status(500).send({ error: error });
+	}
+});

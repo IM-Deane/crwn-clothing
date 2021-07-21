@@ -5,7 +5,7 @@
 Live demo:
 [https://crwn-clothing-im-deane.herokuapp.com](https://crwn-clothing-im-deane.herokuapp.com/)
 
-**Current Version:** 0.1.13
+**Current Version:** 0.1.14
 
 ## Description:
 
@@ -82,6 +82,16 @@ version of the course.
 - React performance upgrades (Code Splitting, React Lazy, etc)
 
 ## Version History:
+
+**Version 0.1.14:**
+
+Implemented a contact page. This page consists of a simple contact form that
+users can use to submit any questions they have to the business owner.
+
+I have implemented a post route on the server to handle the form submission.
+
+Because there was no need for long-term state management, I decided not to
+create a new reducer for this feature.
 
 **Version 0.1.13:**
 
